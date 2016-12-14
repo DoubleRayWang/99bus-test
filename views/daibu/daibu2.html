@@ -1,0 +1,15 @@
+<ion-view view-title="最新车源">
+    <ion-content>
+        <img src="images/daibu2.jpg" style="width:100%;height:100%">
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="load()"></ion-refresher>
+        <div class="list">
+            <a class="item item-thumbnail-left" ng-repeat="FlyLifechina in FlyLifechinas">
+                <img ng-src={{FlyLifechina.imgUrl}}>
+                <h2>{{FlyLifechina.describe}}</h2>
+                <p style="font-size:10px;">{{FlyLifechina.km}} | {{FlyLifechina.year}}</p>
+                <p style="color:red">{{FlyLifechina.price | currency:"￥"}}万元</p>
+            </a>
+        </div>
+        <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>
