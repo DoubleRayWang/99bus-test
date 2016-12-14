@@ -1,0 +1,32 @@
+<ion-view view-title="用户登陆">
+    <ion-content>
+        <ion-list>
+            <div style="text-align: center;margin-top: 40px;margin-bottom: 40px;"><img src="images/logo.jpg" style="width:30%;height:30%"></div>
+            <div class="card" style="width:80%;margin:0 auto;">
+                <label class="item item-input icon-ion-left">
+                    <i class="icon ion-android-person"></i>
+                    <span class="input-label" style="padding-left: 20px;">账号：</span>
+                    <input type="text" placeholder="手机/Email/账号" ng-model="user">
+                </label>
+                <label class="item item-input icon-ion-left">
+                    <i class="icon ion-ios-locked"></i>
+                    <span class="input-label" style="padding-left: 20px;">密码：</span>
+                    <input type="password" placeholder="密码" ng-minlength="3" ng-model="password">
+                </label>
+                <label class="item item-input item-select ">
+                    <i class="icon ion-ios-locked"></i>
+                    <span class="input-label" style="padding-left: 20px;">性别：</span>
+                    <select>
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </label>
+                <div class="padding">
+                    <button class="button button-assertive" style="width:49%">注册</button>
+                    <button ng-disabled ="!user || !password" class="button button-dark" style="width:49%" ui-sref="tabs.home">登陆</button>
+                </div>
+            </div>
+
+        </ion-list>
+    </ion-content>
+</ion-view>
