@@ -1,0 +1,89 @@
+<ion-view view-title="车辆详情">
+    <ion-nav-buttons side="right">
+        <button class="button icon ion-star button-assertive">收藏</button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2000" show-pager="true">
+            <ion-slide>
+                <div class="box">
+                    <img src="images/bc/bc1.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img src="images/bc/bc2.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img src="images/bc/bc3.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img src="images/bc/bc4.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img src="images/bc/bc5.jpg">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img src="images/bc/bc6.jpg">
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <div ng-repeat="FlyLifechina in FlyLifechinas">
+            <h4>{{FlyLifechina.describe}}</h4>
+            <p style="color:red">{{FlyLifechina.price | currency:"￥"}}万元</p>
+            <div class="row">
+                <div class="col-33">
+                    <p>车辆编号</p>
+                    <p>{{FlyLifechina.num}}</p>
+                </div>
+                <div class="col-33">
+                    <p>首次上架</p>
+                    <p>{{FlyLifechina.year}}</p>
+                </div>
+                <div class="col-33">
+                    <p>行驶里程</p>
+                    <p>{{FlyLifechina.km}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-33">
+                    <p>归属地</p>
+                    <p>{{FlyLifechina.Local}}</p>
+                </div>
+                <div class="col-33">
+                    <p>排放标准</p>
+                    <p>{{FlyLifechina.displacement}}</p>
+                </div>
+                <div class="col-33">
+                    <p>燃油类型</p>
+                    <p>{{FlyLifechina.gasoline}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-33">
+                    <p>车辆级别</p>
+                    <p>{{FlyLifechina.rank}}</p>
+                </div>
+                <div class="col-33">
+                    <p>车身颜色</p>
+                    <p>{{FlyLifechina.color}}</p>
+                </div>
+                <div class="col-33">
+                    <p>交强险到期</p>
+                    <p>{{FlyLifechina.insure}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar>
+        <button class="button button-positive" style="width:50%;">400-822-0533</button>
+        <button class="button button-assertive" style="width:50%;">预约看车</button>
+    </ion-footer-bar>
+</ion-view>
