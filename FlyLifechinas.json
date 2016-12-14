@@ -1,0 +1,47 @@
+[
+  {
+    "id":"bc",
+    "describe":"奔驰S级 2014款 S 400 L Hybrid 3.5 自动(进口)",
+    "price":80,
+    "imgUrl":"images/bc.jpg",
+    "km":"2.00万公里",
+    "year":"2014年",
+    "num":"4613357",
+    "Local":"成都",
+    "displacement":"未知",
+    "gasoline":"汽油",
+    "rank":"中大型SUV",
+    "color":"白色",
+    "insure":"2017-06"
+  },
+  {
+    "id":"dazhong",
+    "describe":"大众高尔夫 2012款 高尔夫 敞篷车 1.4T 双离合 豪华版(进口)",
+    "price":20.9,
+    "imgUrl":"images/dazong.jpg",
+    "km":"1.20万公里",
+    "year":"2015年",
+    "num":"4611224",
+    "Local":"成都",
+    "displacement":"国IV",
+    "gasoline":"汽油",
+    "rank":"MPV",
+    "color":"蓝色",
+    "insure":"2017-06"
+  },
+  {
+    "id":"bmw",
+    "describe":"宝马5系 2014款 525Li 2.0T 自动 风尚设计套装",
+    "price":36.5,
+    "imgUrl":"images/bmw.jpg",
+    "km":"5.20万公里",
+    "year":"2013年",
+    "num":"4611166",
+    "Local":"成都",
+    "displacement":"国IV",
+    "gasoline":"汽油",
+    "rank":"中型车",
+    "color":"白色",
+    "insure":"2017-06"
+  }
+]

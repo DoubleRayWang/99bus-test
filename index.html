@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,with-device-width">
+    <title>99好车</title>
+    <link rel="stylesheet" href="lib/ionic/css/ionic.css">
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <style>
+        .box {
+            width: 100%;
+            height: 270px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .box > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .col a> div > img {
+            width: 50%;
+            height: 50%;
+        }
+        .list .item  p{
+            overflow: inherit;
+            text-overflow: clip;
+            white-space: normal;
+        }
+        .list .item  h2{
+            overflow: inherit;
+            text-overflow: clip;
+            white-space: normal;
+        }
+        .col p {
+            font-size: 16px;
+            font-family: 楷体;
+        }
+
+        .border {
+            border: 1px solid #abc;
+            margin-left: 10px;
+            text-align: center;
+        }
+    </style>
+    <script src="js/app.js"></script>
+    <script src="views/mine/mine.js"></script>
+    <script src="views/questions/questions.js"></script>
+    <script src="views/FlyLifechina/FlyLifechina.js"></script>
+    <script src="views/details/details.js"></script>
+    <script src="views/bmw/bmw.js"></script>
+    <script src="views/daibu/daibu.js"></script>
+</head>
+<body ng-app="myapp">
+<ion-pane>
+    <ion-side-menus>
+        <ion-side-menu-content>
+         <ion-nav-bar class="bar-assertive" align-title="center">
+            <ion-nav-back-button class="button-clear">
+            <i class="icon ion-android-arrow-back"></i>后退
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view>
+
+         </ion-nav-view>
+        </ion-side-menu-content>
+    <ion-side-menu>
+        <ion-header-bar class="bar bar-positive">
+            <h1 class="title">关于我们</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item class="item-icon-left" menu-close style="font-size: 12px;">
+                    <span class="icon ion-home"></span>公司地址：北京市东城区东四十条甲<br>25号 - 嘉诚有树B座107室
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close style="font-size: 12px;">
+                    <span class="icon ion-email"></span>邮政编码：100007
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close style="font-size: 12px;">
+                    <span class="icon ion-ios-telephone"></span>联系电话：020-28934253
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close style="font-size: 12px;">
+                    <span class="icon ion-ios-printer"></span>传真号码：010-59865901
+                </ion-item>
+                <ion-item class="item-icon-left" menu-close style="font-size: 12px;">
+                    <span class="icon ion-android-call"></span>客户服务专线：010-59865900转815<br> 或 400-666-1612
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+
+    </ion-side-menus>
+    <!--<ion-header-bar class="bar-assertive">-->
+    <!--<div class="buttons">-->
+    <!--<button class="button bar-assertive icon ion-ios-arrow-down"></button>-->
+    <!--</div>-->
+    <!--<div class="list list-inset title">-->
+    <!--<label class="item item-input">-->
+    <!--<i class="icon ion-ios-search placeholder-icon"></i>-->
+    <!--<input type="text" placeholder="请输入品牌车系">-->
+    <!--</label>-->
+    <!--</div>-->
+    <!--<div class="buttons">-->
+    <!--<button class="button bar-assertive icon ion-android-home"></button>-->
+    <!--</div>-->
+    <!--</ion-header-bar>-->
+    <!--<ion-content class="has-header has-footer">-->
+    <!--<ion-slide-box auto-play="true" does-continue="true" slide-interval="2000" show-pager="true">-->
+    <!--<ion-slide>-->
+    <!--<div class="box">-->
+    <!--<img src="images/car1.jpg">-->
+    <!--</div>-->
+    <!--</ion-slide>-->
+    <!--<ion-slide>-->
+    <!--<div class="box">-->
+    <!--<img src="images/car2.jpg">-->
+    <!--</div>-->
+    <!--</ion-slide>-->
+    <!--<ion-slide>-->
+    <!--<div class="box">-->
+    <!--<img src="images/car3.jpg">-->
+    <!--</div>-->
+    <!--</ion-slide>-->
+    <!--<ion-slide>-->
+    <!--<div class="box">-->
+    <!--<img src="images/car4.jpg">-->
+    <!--</div>-->
+    <!--</ion-slide>-->
+    <!--</ion-slide-box>-->
+    <!--<div class="list" style="float: left">-->
+    <!--<div class="item item-avatar">-->
+    <!--<img src="images/bmw.png">-->
+    <!--<p>宝马</p>-->
+    <!--</div>-->
+    <!--<div class="item item-avatar">-->
+    <!--<img src="images/ben.png">-->
+    <!--<p>奔驰</p>-->
+    <!--</div>-->
+    <!--<div class="item item-avatar">-->
+    <!--<img src="images/ford.png">-->
+    <!--<p>福特</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</ion-content>-->
+    <!--<div class="bar bar-footer">-->
+    <!--<div class="tabs tabs-secondary tabs-icon-top">-->
+    <!--<a class="tab-item" href="#">-->
+    <!--<i class="icon ion-volume-medium"></i>推荐-->
+    <!--</a>-->
+    <!--<a class="tab-item" href="#">-->
+    <!--<i class="icon ion-ios-list-outline"></i>车源-->
+    <!--</a>-->
+    <!--<a class="tab-item" href="#">-->
+    <!--<i class="icon ion-chatbubbles"></i>问答-->
+    <!--</a>-->
+    <!--<a class="tab-item" href="#">-->
+    <!--<i class="icon ion-android-notifications-none"></i>活动-->
+    <!--</a>-->
+    <!--<a class="tab-item" href="#">-->
+    <!--<i class="icon ion-android-person"></i>我的-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</div>-->
+</ion-pane>
+</body>
+</html>
