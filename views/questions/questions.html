@@ -1,0 +1,20 @@
+<ion-view view-title="问答">
+    <ion-nav-buttons side="right">
+        <a class="button button-assertive icon ion-chatbubble-working" href="#/tabs/quiz">问专家</a>
+    </ion-nav-buttons>
+    <ion-content >
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="load()"></ion-refresher>
+        <div class="list">
+            <div class="item"  ng-repeat="question in questions">
+                <p style="float: left;font-size:12px;">{{question.place}}</p>
+                <p class="text-right" style="font-size:12px;">{{question.date}}</p>
+                <p style="font-size:16px;">{{question.content}}</p>
+                <div class="card" style="background: #aabbcc">
+                    <p>魏征：</p>
+                    <p>{{question.replay}}</p>
+                </div>
+            </div>
+        </div>
+        <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>
